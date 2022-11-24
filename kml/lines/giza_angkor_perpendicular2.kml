@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2" xmlns:gx="http://www.google.com/kml/ext/2.2" xmlns:kml="http://www.opengis.net/kml/2.2" xmlns:atom="http://www.w3.org/2005/Atom">
+<Document>
+	<name>Giza-Angkor Perpendicular at Angkor</name>
+	<Style id="yellowLine">
+		<LineStyle>
+			<color>7f00ffff</color>
+			<width>4</width>
+		</LineStyle>
+		<PolyStyle>
+			<color>7f00ff00</color>
+		</PolyStyle>
+	</Style>
+   <Placemark>
+    <styleUrl>yellowLine</styleUrl>
+    <LineString>
+      <extrude>1</extrude>
+      <tessellate>1</tessellate>    
+			<coordinates>
+      103.8668450435321,13.41240346106511,0   <!-- Angkor -->
+      103.8683036272064,13.41512619461184,0   <!-- Giza, nearby point Heading 27, midway -->
+      103.8698969786742,13.41819217580858,0   <!-- Giza, nearby point Heading 27 -->
+      -76.1316963727936,-13.41512619461184,0  <!-- Midway antipode -->
+      103.8668450435321,13.41240346106511,0   <!-- Angkor -->
+      </coordinates>
+    </LineString>
+  </Placemark>
+</Document>
+</kml>

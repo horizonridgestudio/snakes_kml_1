@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2" xmlns:gx="http://www.google.com/kml/ext/2.2" xmlns:kml="http://www.opengis.net/kml/2.2" xmlns:atom="http://www.w3.org/2005/Atom">
+<Document>
+	<name>Nazca Line 1</name>
+	<Style id="yellowLine">
+		<LineStyle>
+			<color>7f00ffff</color>
+			<width>4</width>
+		</LineStyle>
+		<PolyStyle>
+			<color>7f00ff00</color>
+		</PolyStyle>
+	</Style>
+   <Placemark>
+    <styleUrl>yellowLine</styleUrl>
+    <LineString>
+      <extrude>1</extrude>
+      <tessellate>1</tessellate>    
+			<coordinates>
+      -75.12640974398208,-14.69586512288908,0 <!-- Runway 1 top left corner -->
+      -75.1227491982112,-14.69456699936652,0  <!-- Runway 1 top middle -->
+      -75.11900813118717,-14.6931973885307,0  <!-- Runway 1 top right corner -->
+      104.8772508017888,14.69456699936652,0  <!-- Runway 1 top middle antipode -->
+      -75.12640974398208,-14.69586512288908,0 <!-- Runway 1 top left corner -->
+      </coordinates>
+    </LineString>
+  </Placemark>
+</Document>
+</kml>

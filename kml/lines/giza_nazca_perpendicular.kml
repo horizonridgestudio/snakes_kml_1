@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2" xmlns:gx="http://www.google.com/kml/ext/2.2" xmlns:kml="http://www.opengis.net/kml/2.2" xmlns:atom="http://www.w3.org/2005/Atom">
+<Document>
+	<name>Giza-Nazca perpendicular at Giza</name>
+	<Style id="yellowLine">
+		<LineStyle>
+			<color>7f00ffff</color>
+			<width>4</width>
+		</LineStyle>
+		<PolyStyle>
+			<color>7f00ff00</color>
+		</PolyStyle>
+	</Style>
+   <Placemark>
+    <styleUrl>yellowLine</styleUrl>
+    <LineString>
+      <extrude>1</extrude>
+      <tessellate>1</tessellate>    
+			<coordinates>
+      31.13421985356293,29.97918784549606,0    <!-- Giza -->
+      31.13414382663507,29.97956358668121,0  <!-- h1 -->
+      31.1339673623771,29.98110615904446,0    <!-- h2 -->
+      -148.86585617336493,-29.97956358668121,0  <!-- h1 antipode -->
+      31.13421985356293,29.97918784549606,0    <!-- Giza -->
+      </coordinates>
+    </LineString>
+  </Placemark>
+</Document>
+</kml>
+
+

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2" xmlns:gx="http://www.google.com/kml/ext/2.2" xmlns:kml="http://www.opengis.net/kml/2.2" xmlns:atom="http://www.w3.org/2005/Atom">
+<Document>
+	<name>Giza-Angkor</name>
+	<Style id="yellowLine">
+		<LineStyle>
+			<color>7f00ffff</color>
+			<width>4</width>
+		</LineStyle>
+		<PolyStyle>
+			<color>7f00ff00</color>
+		</PolyStyle>
+	</Style>
+   <Placemark>
+    <styleUrl>yellowLine</styleUrl>
+    <LineString>
+      <extrude>1</extrude>
+      <tessellate>1</tessellate>    
+			<coordinates>
+      31.13421985356293,29.97918784549606,0    <!-- Giza -->
+      67.99588682419022,26.73842563268983,0    <!-- Midway: near Mohenjo-Daro -->
+      103.8668450435321,13.41240346106511,0    <!-- Angkor -->
+      -112.00411317580978,-26.73842563268983,0 <!-- Midway antipode -->
+      31.13421985356293,29.97918784549606,0    <!-- Giza -->
+      </coordinates>
+    </LineString>
+  </Placemark>
+</Document>
+</kml>
