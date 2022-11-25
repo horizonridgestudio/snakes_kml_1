@@ -124,7 +124,7 @@ This line does go directly over both Nazca and Ollantaytambo.
 
 Again, Angkor Wat is about 110 miles away, so it seems best to discard that site as a primary reference point in this study.  Marty is also of the opinion that a ~110 mile line width is a reasonable level of precision.  He says, "It's about .25% of the global circumference" .  There are many notable sites that lie within that distance away from this line. 
 
-__Sites and landmarks near the equator line__
+__Sites and landmarks near the Giza-Easter Island equator line__
 
 * Petra, Jordan: 5 miles
 * Machu Picchu, Peru: 14 miles
@@ -142,7 +142,7 @@ The North Pole based on this line falls somewhat south of the previously determi
 
 ![Juneau](images/gbd/alaska_juneau_pole.jpg)
 
-__Landmarks near the pole__
+__Landmarks near the Giza-Easter Island pole__
 
 * Juneau, Alaska: 127 miles
 * Malaspina Glacier: 206 miles
