@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2" xmlns:gx="http://www.google.com/kml/ext/2.2" xmlns:kml="http://www.opengis.net/kml/2.2" xmlns:atom="http://www.w3.org/2005/Atom">
+<Document>
+	<name>Giza-Easter Island perpendicular at Easter Island</name>
+	<Style id="yellowLine">
+		<LineStyle>
+			<color>7f00ffff</color>
+			<width>4</width>
+		</LineStyle>
+		<PolyStyle>
+			<color>7f00ff00</color>
+		</PolyStyle>
+	</Style>
+   <Placemark>
+    <styleUrl>yellowLine</styleUrl>
+    <LineString>
+      <extrude>1</extrude>
+      <tessellate>1</tessellate>    
+			<coordinates>
+      -109.3020317137169,-27.08523592939108,0    <!-- Easter Island -->
+      -109.3021972706501,-27.08463902504363,0   <!-- heading 1 -->
+      -109.302537760037,-27.08348538074148,0    <!-- heading 2 -->
+      70.6978027293499,27.08463902504363,0   <!-- heading 1 antipode-->
+      -109.3020317137169,-27.08523592939108,0    <!-- Easter Island -->
+      </coordinates>
+    </LineString>
+  </Placemark>
+</Document>
+</kml>

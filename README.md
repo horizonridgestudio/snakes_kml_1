@@ -112,6 +112,47 @@ Going back to the Naza lines, I did discover one intriguing alignment, which is 
 
 In conclusion, I was not able to identify the specific Nazca line which Chuck extended to draw his alternate equator, creating a best-fit approximation for alignments over Giza, Angkor, Ollantaytambo, and Easter Island, without accepting a 110-mile margin of error.  Other aspects of the Nazca-Giza-Malaspina triangle hypothesis are intriguing and might bear fruit with further study.
 
+****Update****
+
+After discussion with @MartinOfTheHenges, we've settled on the solution of a Giza-Easter Island equatorial line to expalain the alignments Chuck was using.  Interestingly, Easter Island is quasi-antipodal to Giza;  It is impossible to see both simultaneously in a single view of the globe:
+
+![Easter Island Globe](images/gbd/globe.jpg)
+
+This line does go directly over both Nazca and Ollantaytambo.
+
+![Nazca and Ollantaytambo](images/gbd/nazca_ollantaytambo.jpg)
+
+Again, Angkor Wat is about 110 miles away, so it seems best to discard that site as a primary reference point in this study.  Marty is also of the opinion that a ~110 mile line width is a reasonable level of precision.  He says, "It's about .25% of the global circumference" .  There are many notable sites that lie within that distance away from this line. 
+
+__Sites and landmarks near the equator line__
+
+* Petra, Jordan: 5 miles
+* Machu Picchu, Peru: 14 miles
+* Mohenjo Daro, Pakistan: 22 miles
+* Pasargadae, Iran: 24 miles
+* Cusco, Peru: 25 miles
+* Jacó Sá Geoglyph, Acre, Brazil: 48 miles
+* mouth of the Amazon, Brazil: 62 miles
+* Paracas, Peru: 85 miles
+* Cape Verde Islands center point: 88 miles
+* Richat Structure, Mauritania: 102 miles
+* Angkor Wat, Cambodia: 110 miles
+
+The North Pole based on this line falls somewhat south of the previously determined site, at `-137.4520314531611,57.44252026638491`.
+
+![Juneau](images/gbd/alaska_juneau_pole.jpg)
+
+__Landmarks near the pole__
+
+* Juneau, Alaska: 127 miles
+* Malaspina Glacier: 206 miles
+
+The relationship to the Nazca Plain is interesting.  This line passes directly over the ridge that marks the border of the Nazca Plain, but does not pass directly over any particular line marked on the plain.
+
+![Nazca](images/gbd/nazca_closeup.jpg)
+
+This reinforces my conclusions above that the Nazca site must be considered as dual-purpose.  The plain itself is a significant geodetic site on a global scale, but the lines marked on the plain are more likely of local significance only. 
+
 ***Data***
 
 To view the data for yourself, you will need to have installed the Google Earth Pro [desktop app](https://www.google.com/earth/about/versions/?gl=US&hl=en#download-pro).  To download this repo, scroll to the top of this page, and click the green __Code__ button, then click the __Download ZIP__ link to save a .zip file.  Unzip the file.  Under the folder __kml__, there are two subfolders, __sites__, and __lines__.  Using Google Earth Pro, run File > Open, navigate to either of these folders, and select all contents.  The __sites__ .kml files are pushpins for all relevant ancient cultural sites mentioned in this article.  The __lines__ .kml files are the alignments described in this article.  
