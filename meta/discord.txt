@@ -1,6 +1,0 @@
-Here is my work learning to draw lines in Google Earth and testing cf-apps7865's theory of extending Nazca lines around the Earth: https://github.com/horizonridgestudio/snakes_kml_1#readme
-
-There is a link at the top of the page to download the images and KML data as a zip file.
-
-TL;DR:  I don't think Chuck's idea of extending Nazca lines all the way around the Earth really works.  But, if you place any credence in the idea of drawing an equator line through the Nazca plain and the Grety Pyramid in Giza, then I determine the resulting North Pole would be at the site of Malaspina Glacier in SE Alaksa, at: -140.5441344612388,59.97127688626272,0.
-
