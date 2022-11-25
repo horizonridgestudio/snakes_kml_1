@@ -114,7 +114,7 @@ In conclusion, I was not able to identify the specific Nazca line which Chuck ex
 
 ****Update****
 
-After discussion with @MartinOfTheHenges, we've settled on the solution of a Giza-Easter Island equatorial line to expalain the alignments Chuck was using.  Interestingly, Easter Island is quasi-antipodal to Giza;  It is impossible to see both simultaneously in a single view of the globe:
+After discussion with @MartinOfTheHenges, we've settled on the solution of a Giza-Easter Island equatorial line to expalain the alignments Chuck was using.  I used the site of Te Pito Kura, the "navel stone" as my reference point on the island.  Interestingly, Easter Island is quasi-antipodal to Giza;  It is impossible to see both simultaneously in a single view of the globe:
 
 ![Easter Island Globe](images/gbd/globe.jpg)
 
