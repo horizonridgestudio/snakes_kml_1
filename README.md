@@ -10,7 +10,7 @@ Chuck of Youtube channel [__cf-apps7865__](https://www.youtube.com/@cfapps7865) 
   * If this line is considered as an alternate equator, a perpendicular longitudinal line can be drawn from Nazca, which passes through Alaska.  If a similar line is drawn from Giza, it intersects the previous line in SE Alaska, meaning that this could be thought of as an alternate North Pole.  ![Alaska pole](images/cf-apps7865/chuck-alaska-pole.jpg)
   * If the triangle formed by Nazca, Giza, and the alternate north pole is measured, the base measures 7677 miles, and the sides measure 6215 miles, producing a triangle with two angles of 51.5 degrees, just like the Great Pyramid itself.![triangle](images/cf-apps7865/chuck-triangle.jpg)
 
-A story of cataclysm is implied by these points, based on source material _Fingerprints of the Gods_ and _Heaven's Mirror_, by Graham Hancock, and _Path of the Pole_, by Charles Hapgood: Prior to the Younger Dryas impact event that ended the last ice age, the Earth had a different pole, and therefore a different equator.  The cataclysmic comet strike  changed the polar orientation of the Earth.  A hypothetical lost civilization which predated this event had mapped the Earth and placed several key sites around the previous equator for geodetic purposes, which we now maintain as ancient sacred sites.
+A story of cataclysm is implied by these points, based on source material _Fingerprints of the Gods_ , by Graham Hancock, and _Path of the Pole_, by Charles Hapgood: Prior to the Younger Dryas impact event that ended the last ice age, the Earth had a different pole, and therefore a different equator.  The cataclysmic comet strike  changed the polar orientation of the Earth.  A hypothetical lost civilization which predated this event had mapped the Earth and placed several key sites around the previous equator for geodetic purposes, which we now maintain as ancient sacred sites.
 
 Chuck has illustrated this well enough for a presentation in a simple Youtube video, using Google Earth Pro (GEP).  I wanted to reproduce these line diagrams to learn the technicalities of GEP, and to verify these claims for myself, in a slightly more precise way than Chuck's very casual approach, and to record my methods and findings here.
 
@@ -78,7 +78,7 @@ Imagine the points as being laid out along a flat circle in the form of a ☮ pe
 
 Using 4 segments like this will give Google Earth the information it needs to draw a great circle around the Earth, overlaying the two points of interest, and it is more accurate than anything drawn freehand.  The new KML file can be opened into GEP as a new item that sits alongside the separate items previously created for the two points of interest.
 
-Then there is the question of how to draw two more lines at perpendicular angles to this line, at the reference point, to traingulate an alternate pole corresponding to the alternate equator.  To do this:
+Then there is the question of how to draw two more longitudinal circles, at perpendicular angles to the equator circle, at each reference point, to traingulate an alternate pole.  To do this:
 
 1. With the equator line loaded and visible, use the Ruler tool, deselect the 'Mouse Navigation' checkbox, and trace a temporary ruler line over the KML line.  The Ruler window will show a _Heading_ value, in degrees.  Make a note of this.  For example, tracing a ruler line from the apex of the great pyramid, to the left a short distance, returns a value of 266 degrees.
 
@@ -110,9 +110,9 @@ For further corroboration, I repeated the exercise as above, but used Giza and _
 
 The terrain surrounding the Richat structure is a point of corroboration for the geologic significance of this great circle, as there are large-scale fluid erosional patterns running roughly in parrallel with the Giza-Nazca line over vast distances.
 
-Going back to the Naza lines, I did discover one intriguing alignment, which is not part of the video.  I don't think it makes sense to project these lines all the way around the world, but in at least one case, a Nazca line can be extended as a great circle onto a perfect alignment with a well-known Inca site on the other side of Peru.  I picked one of the most distinct, square formations close to the official viewing platform at the protected area of Nazca.  The lines of this form are remarkably straight and whoever made them must have been a master surveyor. ![Nazca Line 1](images/gbd/nazca_line1.jpg)  By extending this line across Peru, it passes directly over the Coricancha in Cusco, which is the architectural masterpiece at the heart of that mysterious city. ![Nazca Line 1 Coricancha](images/gbd/nazca_line1_coricancha.jpg).
+Going back to the Naza lines, I did discover one intriguing alignment, which is not part of the video.  I don't think it makes sense to project these lines all the way around the world, but in at least one case, a Nazca line can be extended as a great circle onto a perfect alignment with a well-known Inca site on the other side of Peru.  I picked one of the most distinct, square formations close to the official viewing platform at the protected area of Nazca.  The lines of this form are remarkably straight and whoever made them must have been a master surveyor. ![Nazca Line 1](images/gbd/nazca_line1.jpg)  By extending this line across Peru, it passes directly over the Coricancha in Cusco, so perfectly it must be significant.  ![Nazca Line 1 Coricancha](images/gbd/nazca_line1_coricancha.jpg)
 
-This illustrates the utility of great circles, regardless of whether there is a proposed alternate equator.  The great circle allows for discovery of alignments at indeterminate distance.  This is better than drawing freehand, as it would be impossible to know how far to extend the freehand line without knowing of an alignment beforehand.  Once the initial perfect match has been found (the Coricancha in this case), the great circle can be turned off as it has served it's function.  Any further discoveries along the line are optionally corroborative.  If I follow this circle as far as Egypt, it passes between of Elephantine Island and the Kom Ombo Temple, but this was fuzzy (off by about 21 miles and 5 miles, respectively), and at this point it seems to lose it's significance.  I think that selecting other Nazca lines to extend, and considering other Peruvian sites of interestest, would likely reveal other relatively strong local alignments.
+This illustrates the utility of great circles, regardless of whether there is a proposed alternate equator.  The great circle allows for discovery of alignments at indeterminate distance.  This is better than drawing freehand, as it would be impossible to know how far to extend the freehand line without knowing of an alignment beforehand.  Once the initial perfect match has been found (the Coricancha in this case), the great circle can be turned off as it has served it's function.  Any further discoveries along the line are optionally corroborative.  If I follow this circle as far as Egypt, it passes between of Elephantine Island and the Kom Ombo Temple, but this seems insignificant.  I think that selecting other Nazca lines to extend, and considering other Peruvian sites of interestest, would likely reveal other relatively strong local alignments.
 
 In conclusion, I was not able to identify the specific Nazca line which Chuck extended to draw his alternate equator, creating a best-fit approximation for alignments over Giza, Angkor, Ollantaytambo, and Easter Island, without accepting a 110-mile margin of error.  Other aspects of the Nazca-Giza-Malaspina triangle hypothesis are intriguing and might bear fruit with further study.
 
@@ -159,7 +159,7 @@ This reinforces my conclusions above that the Nazca site must be considered as d
 
 ***Links***
 
-Since initial upload of this article, discussions have revealed more related source material covering the Giza-Easter Island great circle.  Jim Allison seems to be the primary source that Gilbertson, Pooyard, and Chuck are drawing from.  I will review each of these works specifically in future articles.
+Since initial upload of this article, discussions have revealed more related source material covering the Giza-Easter Island great circle.  Jim Allison seems to be the primary source that Gilbertson, Pooyard, and Chuck are drawing from.  I will review each of these works specifically in future articles.  I will also be posting more on KML [my tech blog](https://www.horizonridge.studio/blog).
 
 * Jim Allison, [The Prehistoric Alignment of World Wonders](http://home.hiwaay.net/~jalison/) (2001)
 * Patrice Pooyard, [The Revelation of the Pyramids](https://www.imdb.com/title/tt2124189/) (2010)
@@ -174,5 +174,6 @@ Although I only described one extension of a Nazca line in this article, I have 
 
 Enjoy!
 
-Brian Davis, Henderson, NV, 2022-11-24
-https://github.com/horizonridgestudio/snakes_kml_1
+Brian Davis, https://www.horizonridge.studio/
+
+[This article](https://github.com/horizonridgestudio/snakes_kml_1) ©2022
