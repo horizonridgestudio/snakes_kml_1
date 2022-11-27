@@ -32,7 +32,7 @@ important here is the numerical longitude/lattitude coordinates for the site.
 For example, this is the XML element with the coordinates for the apex (center)
 of the Great Pyramid of Giza: `<coordinates>104.87359025601792,14.69586512288908,0</coordinates>`.  In the node, the actual coordinate value is `104.87359025601792,14.69586512288908,0` which encodes a longitude, a latitude, and an altitude as comma-separated values. I will make use of this in later steps.
 
-3. Write a new .kml file which will encode a simple version the line I want to draw. This is a basic template which can take a list of two or more coordinates, which are nodes along a segmented line, like a connect-the-dots puzzle (see example in kml/lines/giza_angkor_template.kml). I draw a line between two points of interest:
+3. Write a new .kml file which will encode a simple version the line to draw. This is a basic template which can take a list of two or more coordinates, which are nodes along a segmented line, like a connect-the-dots puzzle (see example in kml/lines/giza_angkor_template.kml). Draw a line between two points of interest:
 
 ```
 <coordinates>
@@ -43,9 +43,9 @@ of the Great Pyramid of Giza: `<coordinates>104.87359025601792,14.69586512288908
 Each CSV coordinate value is separated by whitespace.  I like to use a newline
 which allows for comment text at the ends of the lines.
 
-4. I load this into GEP as a temporary item (File > Open). I then drop a pin on a midway point along the newly visible line, and grab the coordinates for the midway point as in setp 2.  Delete the temporary item loaded in step 4, then make a new KML file for the full-circle line.
+4. I load this into GEP as a temporary item (File > Open). Drop a pin on a midway point along the newly visible line, and grab the coordinates for the midway point as in setp 2.  Delete the temporary item loaded in step 4, then make a new KML file for the full-circle line.
 
-5. __The 5-point, 4-segment equatorial line formula__. Draw line segments connecting these points, in order:
+5. __The 5-point, 4-segment great circle formula__. Draw line segments connecting these points, in order:
 * The first point of interest
 * A point somewhere along a line drawn between the first and second points of interest.  The actual distance along the line is irrelevant.  I call this a 'midway' point, but it does not have to be exactly equidistant between the endpoints.
 * The second point of interest
@@ -74,7 +74,7 @@ Imagine the points as being laid out along a flat circle in the form of a ☮ pe
 
 <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d2/Peace_sign.svg/640px-Peace_sign.svg.png" alt="Peace Symbol" width="200"/>
 
-Using 4 segments like this will result in the seamless illusion of a single line forming an equatorial line around the Earth, overlaying the two points of interest, and it is acceptably accurate.  The new KML file can be opened into GEP as a new item that sits alongside the separate items previously created for the two points of interest.
+Using 4 segments like this will give Google Earth the information it needs to draw a great circle around the Earth, overlaying the two points of interest, and it is more accurate than anything drawn freehand.  The new KML file can be opened into GEP as a new item that sits alongside the separate items previously created for the two points of interest.
 
 Then there is the question of how to draw two more lines at perpendicular angles to this line, at the point of interest, to traingulate an alternate pole corresponding to the alternate equator.  To do this:
 
@@ -114,7 +114,7 @@ In conclusion, I was not able to identify the specific Nazca line which Chuck ex
 
 ****Update****
 
-After discussion with @MartinOfTheHenges, we've settled on the solution of a Giza-Easter Island equatorial line to expalain the alignments Chuck was using.  I used the site of Te Pito Kura, the "navel stone" as my reference point on the island.  Interestingly, Easter Island is quasi-antipodal to Giza;  It is impossible to see both simultaneously in a single view of the globe:
+After discussion with @MartinOfTheHenges, we've settled on the solution of a Giza-Easter Island great circle to expalain the alignments Chuck was using.  I used the site of Te Pito Kura, the "navel stone" as my reference point on the island.  Interestingly, Easter Island is almost antipodal to Giza;  It is impossible to see both simultaneously in a single view of the globe:
 
 ![Easter Island Globe](images/gbd/globe.jpg)
 
