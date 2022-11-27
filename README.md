@@ -151,7 +151,16 @@ The relationship to the Nazca Plain is interesting.  This line passes directly o
 
 ![Nazca](images/gbd/nazca_closeup.jpg)
 
-This reinforces my conclusions above that the Nazca site must be considered as dual-purpose.  The plain itself is a significant geodetic site on a global scale, but the lines marked on the plain are more likely of local significance only. 
+This reinforces my conclusions above that the Nazca site must be considered as dual-purpose.  The plain itself is a significant geodetic site on a global scale, but the lines marked on the plain are more likely of local significance only.
+
+***Links***
+
+Since initial upload of this article, discussions have revealed more related source material covering the Giza-Easter Island great circle.  Jim Allison seems to be the primary source that Gilbertson, Pooyard, and Chuck are drawing from.  I will review each of these works specifically in future articles.
+
+* Jim Allison, [The Prehistoric Alignment of World Wonders](http://home.hiwaay.net/~jalison/) (2001)
+* Patrice Pooyard, [The Revelation of the Pyramids](https://www.imdb.com/title/tt2124189/) (2010)
+* Chuck, cf-apps7865, [The Equator 12,500 Years Ago?](https://youtu.be/DpNI2FtCgtc) (2014)
+* Roger Gilbertson, [The Unusual Earth Orbit Circling Above Our Ancient Past, TEDxColoradoSprings](https://www.youtube.com/watch?v=_HytJn6uaRk&start=272) (2020)
 
 ***Data***
 
