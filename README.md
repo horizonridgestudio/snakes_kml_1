@@ -24,7 +24,7 @@ I read the [official documentation ](https://developers.google.com/kml/documenta
 
 I don't know how Chuck actually did it, but this was my method (see step 5 for the mathematical solution):
 
-1. Save a point of interest using the pinpoint tool in GEP under My Places, and use the right-click _copy_ action
+1. Save a reference point using the pinpoint tool in GEP under My Places, and use the right-click _copy_ action
 to grab the auto-generated XML for that single point to the clipboard.
 
 2. Paste the clipboard text into a text editor (VS Code) to read and edit the XML.  All that is
@@ -46,13 +46,21 @@ which allows for comment text at the ends of the lines.
 4. I load this into GEP as a temporary item (File > Open). Drop a pin on a midway point along the newly visible line, and grab the coordinates for the midway point as in setp 2.  Delete the temporary item loaded in step 4, then make a new KML file for the full-circle line.
 
 5. __The 5-point, 4-segment great circle formula__. Draw line segments connecting these points, in order:
-* The first point of interest
-* A point somewhere along a line drawn between the first and second points of interest.  The actual distance along the line is irrelevant.  I call this a 'midway' point, but it does not have to be exactly equidistant between the endpoints.
-* The second point of interest
-* The antipode of the midway point.
-* The first point of interest, again.
+* The first reference point
+* A midway point anywhere along a line drawn between the first and second points of interest.
+* The second reference point.
+* The antipode of the midway point.  To determine the antipode of a given coordinate:
+  * The first value is the longitude.
+    * If it is negative (i.e., west of the Prime Meridian), add 180.
+    * If it is positive (i.e., east of the Prime Meridian), subtract 180.
+  * The second value is the latitude.
+    * Multiply by -1 to reverse the sign.
+  * For example:
+    * This is the a point on the Nazca plain: `-75.12640974398208,-14.69586512288908,0`.
+    * This is it's antipode: `104.87359025601792,14.69586512288908,0`.
+* The first reference point, again.
 
-So for the line between Giza and Angkor, the markup looks like this:
+For Great Pyramid of Giza-Angkor Wat great circle, the markup looks like this:
 
 ```
 <coordinates>
@@ -64,19 +72,13 @@ So for the line between Giza and Angkor, the markup looks like this:
 </coordinates>
 ```
 
-To determine the antipode of a given coordinate:
-* The first value is the longitude.  If it is negative (i.e., west of the Prime Meridian), it will be a negative value.  Add 180 (180 degrees is half of 360 degrees, a full circle).  If the longitude is positive (i.e., east of the Prime Meridian), it will be a positive value.  Subtract 180.
-* The second value is the latitude.  Multiply by -1 to reverse the sign.
-
-So, for example, this is the original coordinate for a point on the Nazca plain: `-75.12640974398208,-14.69586512288908,0`. This is it's antipode: `104.87359025601792,14.69586512288908,0`
-
 Imagine the points as being laid out along a flat circle in the form of a ☮ peace symbol:
 
 <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d2/Peace_sign.svg/640px-Peace_sign.svg.png" alt="Peace Symbol" width="200"/>
 
 Using 4 segments like this will give Google Earth the information it needs to draw a great circle around the Earth, overlaying the two points of interest, and it is more accurate than anything drawn freehand.  The new KML file can be opened into GEP as a new item that sits alongside the separate items previously created for the two points of interest.
 
-Then there is the question of how to draw two more lines at perpendicular angles to this line, at the point of interest, to traingulate an alternate pole corresponding to the alternate equator.  To do this:
+Then there is the question of how to draw two more lines at perpendicular angles to this line, at the reference point, to traingulate an alternate pole corresponding to the alternate equator.  To do this:
 
 1. With the equator line loaded and visible, use the Ruler tool, deselect the 'Mouse Navigation' checkbox, and trace a temporary ruler line over the KML line.  The Ruler window will show a _Heading_ value, in degrees.  Make a note of this.  For example, tracing a ruler line from the apex of the great pyramid, to the left a short distance, returns a value of 266 degrees.
 
@@ -92,23 +94,25 @@ Then there is the question of how to draw two more lines at perpendicular angles
 
 Sadly, I don't think Chuck's claims bear close scrutiny.  As you zoom out, a site which does not lie along a line will apparently approach the line.  The degree of precision is determined by the to amount to which you zoom out.  Chuck's views are usually very zoomed out, on the order of 10,000 miles, viewed from a vantage point showing the whole globe in space.  So there's a lot of glossing over details in order to pursue an appealing, intuitive idea.  I found that the alignments only work given a 110-mile margin of error.
 
-His initial idea of extending the Nazca lines is fraught, because a close look at the Nazca plain will reveal that there are hundreds of lines, that criss-cross each other and create a very jumbled picture.![Nazca jumble](images/gbd/nazca_jumble.jpg)  I was able to screenshot a previous video to catch a frame which showed a relative close-up of Nazca with the dozen or so particular lines he selected for extension, but trying to identify these features on my view in GEP was impossible from lack of resolution on the image Chuck shared in the video. ![Nazca lines](images/cf-apps7865/chuck-nazca-lines.jpg) Trying to find the one Nazca line out of hundreds which happens to extend over the Great Pyramid would be an exercise in futility.  Chuck should have shared a more detailed view of Nazca which explained exactly which lines he chose to follow, and why.  I did play around with a few of the major lines, and I'll describe my own findings below.  They do not confirm Chuck's claims in this video, but there were some otherwise interesting details.
+His initial idea of extending the Nazca Lines is fraught, because a close look at the Nazca plain will reveal that there are hundreds of lines, that criss-cross each other and create a very jumbled picture.![Nazca jumble](images/gbd/nazca_jumble.jpg)  I was able to screenshot a previous video to catch a frame which showed a relative close-up of Nazca with the dozen or so particular lines he selected for extension, but trying to identify these features on my view in GEP was impossible from lack of resolution on the image Chuck shared in the video. ![Nazca Lines](images/cf-apps7865/chuck-nazca-lines.jpg) Trying to find the one Nazca line out of hundreds which happens to extend over the Great Pyramid would be an exercise in futility.  Chuck should have shared a more detailed view of Nazca which explained exactly which Lines he chose to follow, and why.  I did play around with a few of the major Lines, and I'll describe my own findings below.  They do not confirm Chuck's claims in this video, but there were some otherwise interesting details.
 
 The Antipodal point of the Nazca plain, at which multiple extended lines would cross, does not lie over Angkor Wat.  It is in the same general area, and is a close enough fit when you've zoomed out to a vantage point thousands of miles away, but when viewed with precision, is actually 111 miles away from Angkor Wat.![Angkor Nazca antipode distance](images/gbd/angkor_nazca_antipode_distance.jpg)  Choosing to extend longitudinal lines radiating from Nazca around the globe would imply that Nazca would be a polar point on the Earth, but Chuck never indicates that he appreciates this implication.  He is apparently just working on an intuitive hunch that the lines point to sites on the other side of the globe.
 
-Rather than searching for a needle in a haystack by extending every Nazca line, I was able to proceed by assuming that the Great Pyramid of Giza and the pyramid-like Angkor Wat sites were the most important points along the proposed alternate equator line.  Graham Hancock had argued for a harmonious geodetic alignment between these sites in his book _Heaven's Mirror_.  As the apex points of these structures are easily found and pinpointed using GEP, I based my new equator line projection on these points, and would then be able to see how close _this_ resulting line is to Nazca.  Predictably, it is not close, but is 110 miles away. ![Giza Angkor line Nazca distance](images/gbd/giza_angkor_line_nazca_distance.jpg)
+Rather than searching for a needle in a haystack by extending every Nazca Line, I was able to proceed by assuming that the Great Pyramid of Giza and the pyramid-like Angkor Wat sites were the most important points along the proposed alternate equator.  As the apex points of these structures are easily found and pinpointed using GEP, I based my new great circle on these points, and would then be able to see how close this is to Nazca.  Predictably, it is not close, but is 110 miles away. ![Giza Angkor line Nazca distance](images/gbd/giza_angkor_line_nazca_distance.jpg)
 
-The Easter Island alignment is actually slightly closer, at only 67 miles off.  Out of curiosity, I looked up the exact antipode of Angkor Wat, which is in the town of Chincha Alta in the Ica region of Peru.  I have included that as a site in the kml data.
+The Easter Island alignment is actually slightly closer, at only 67 miles off.  Out of curiosity, I looked up the antipode of Angkor Wat, which is in the town of Chincha Alta in the Ica region of Peru.  I have included that as a site in the kml data.
 
 Zooming in to the Great Pyramid, as Chuck does not do in his video, we see the skew of an older polar cardinal alignment against the current polar alignment.  The new equator, and the new polar longitude do not match the orientation of the structure.![Giza misalignment](images/gbd/giza_misalignment.jpg) It is not square to the cardinal alignments of the faces of the pyramid.  Zooming in on Angkor Wat, a discrepancy is also evident.![Angkor misalignment](images/gbd/angkor_misalignment.jpg)
 
-I felt the Giza-Angkor projection I had was a reliable basis for continued study, after discarding the Nazca aligment.  When I projected perpendicular lines from Giza and Angkor towards a hypothetical alternate North Pole, the two lines did converge in a spot in SE Alaska, as was shown in the video, albeit at low resolution, and without any explanation or specific details.  The crossing point in Alaska on my line just so happens to lie at the location of Malaspina Glacier.![Malaspina glacier](images/gbd/malaspina.jpg)  This is an astonishing wonder-of-the-world major land feature.  Just looking at it from space in GEP is awe-inspiring.  You wonder, "What is this thing?" . It is an appropriately evocative alternate North Pole site.
+I felt the Giza-Angkor great circle I had was a reliable basis for continued study, after discarding the Nazca aligment.  When I extended perpendicular, longitudinal great circles from Giza and Angkor towards an alternate North Pole, the two circles did converge in a spot in SE Alaska, as was shown in the video, albeit at low resolution, and without any explanation or specific details.  The crossing point in Alaska happens to lie at the location of Malaspina Glacier.![Malaspina Glacier](images/gbd/malaspina.jpg)  This is an astonishing wonder-of-the-world major land feature.  Just looking at it from space in GEP is awe-inspiring.
 
-For further corroboration, I repeated the exercise as above, but used Giza and an arbitrary point on the Nazca plain as my endpoints, and discarded a perfect fit over Angkor.  This resulted in a triangle similar to the one found by Chuck. ![Nazca Giza Malaspina](images/gbd/nazca_giza_malaspina.jpg)  Again, the convergence point of the longitudinal lines was somewhere near Malaspina glacier (just over 110 miles away). ![Malaspina 2](images/gbd/malaspina2.jpg)  Although Chuck did not mention it, I noticed that the Richat Structure in Maruitania was approximately 102 miles from the Giza-Nazca line. ![Malaspina 2](images/gbd/richat_structure.jpg)
+For further corroboration, I repeated the exercise as above, but used Giza and _an arbitrary point_ on the Nazca plain as my endpoints, and discarded a perfect fit over Angkor.  This resulted in a triangle similar to the one found by Chuck. ![Nazca Giza Malaspina](images/gbd/nazca_giza_malaspina.jpg)  Again, the convergence point of the longitudinal lines was somewhere near Malaspina glacier (just over 110 miles away). ![Malaspina 2](images/gbd/malaspina2.jpg)  Although Chuck did not mention it, I noticed that the Richat Structure in Maruitania was approximately 102 miles from the Giza-Nazca line. ![Malaspina 2](images/gbd/richat_structure.jpg)
 
-The terrain surrounding the Richat structure is a point of corroboration for this proposed equatorial alignment, as there are large-scale fluid erosional patterns running roughly in parrallel with the Giza-Nazca line.
+The terrain surrounding the Richat structure is a point of corroboration for the geologic significance of this great circle, as there are large-scale fluid erosional patterns running roughly in parrallel with the Giza-Nazca line over vast distances.
 
-Going back to the Naza lines, I did discover one intriguing alignment, which is not part of the video.  I don't think it makes sense to project these lines all the way around the world, but in at least one case, a Nazca line can be projected onto a perfect alignment with a well-known Inca site on the other side of Peru.  I picked one of the most distinct, square formations close to the official viewing platform at the protected area of Nazca.  The lines of this form are remarkably straight and whoever made them must have been a master surveyor. ![Nazca Line 1](images/gbd/nazca_line1.jpg)  By extending this line across Peru, it passes directly over the Coricancha in Cusco, which is the architectural masterpiece at the heart of that mysterious city. ![Nazca Line 1 Coricancha](images/gbd/nazca_line1_coricancha.jpg)  If I extended this line as far as Egypt, it did actually pass between the sites of Elephantine Island and the Kom Ombo Temple, but this was fuzzy (off by about 21 miles and 5 miles, respectively), so I'm just including that as a curiosity.  I think that selecting other Nazca lines to extend and considering other Peruvian sites of interestest, would probably also reveal other relatively strong local alignments.
+Going back to the Naza lines, I did discover one intriguing alignment, which is not part of the video.  I don't think it makes sense to project these lines all the way around the world, but in at least one case, a Nazca line can be extended as a great circle onto a perfect alignment with a well-known Inca site on the other side of Peru.  I picked one of the most distinct, square formations close to the official viewing platform at the protected area of Nazca.  The lines of this form are remarkably straight and whoever made them must have been a master surveyor. ![Nazca Line 1](images/gbd/nazca_line1.jpg)  By extending this line across Peru, it passes directly over the Coricancha in Cusco, which is the architectural masterpiece at the heart of that mysterious city. ![Nazca Line 1 Coricancha](images/gbd/nazca_line1_coricancha.jpg).
+
+This illustrates the utility of great circles, regardless of whether there is a proposed alternate equator.  The great circle allows for discovery of alignments at indeterminate distance.  This is better than drawing freehand, as it would be impossible to know how far to extend the freehand line without knowing of an alignment beforehand.  Once the initial perfect match has been found (the Coricancha in this case), the great circle can be turned off as it has served it's function.  Any further discoveries along the line are optionally corroborative.  If I follow this circle as far as Egypt, it passes between of Elephantine Island and the Kom Ombo Temple, but this was fuzzy (off by about 21 miles and 5 miles, respectively), and at this point it seems to lose it's significance.  I think that selecting other Nazca lines to extend, and considering other Peruvian sites of interestest, would likely reveal other relatively strong local alignments.
 
 In conclusion, I was not able to identify the specific Nazca line which Chuck extended to draw his alternate equator, creating a best-fit approximation for alignments over Giza, Angkor, Ollantaytambo, and Easter Island, without accepting a 110-mile margin of error.  Other aspects of the Nazca-Giza-Malaspina triangle hypothesis are intriguing and might bear fruit with further study.
 
