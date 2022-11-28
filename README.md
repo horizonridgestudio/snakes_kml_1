@@ -89,9 +89,9 @@ Then there is the question of how to draw two more longitudinal circles, at perp
 
 2. The perpendicular heading will be 90 degrees away.  Trace a ruler line upwards from the apex point of the pyramid, approximating a 90 degree angle, and adjust until the header value of the new line is 356 degrees.
 
-3. Drop a temporary pin along this newly traced line, and a second temporary pin at another point along this line.  Note the coordinate values for these points.
+3. Drop a temporary pin along this newly traced line.
 
-4. Using the starting point and the new temporary points from step 3, make a new KML file for the perpendicular as described above.
+4. Using the starting point and the new temporary point from step 3, make a new KML file for the perpendicular great circle using the cross method described above.
 
 5. Load the perpendicular KML file into GEP alongside the first one and verify by sight.
 
