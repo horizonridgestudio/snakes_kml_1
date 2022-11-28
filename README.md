@@ -24,6 +24,8 @@ I read the [official documentation ](https://developers.google.com/kml/documenta
 
 I don't know how Chuck actually did it, but this was my method (see step 5 for the mathematical solution):
 
+__Great Circle__
+
 1. Save a reference point using the pinpoint tool in GEP under My Places, and use the right-click _copy_ action
 to grab the auto-generated XML for that single point to the clipboard.
 
@@ -45,38 +47,41 @@ which allows for comment text at the ends of the lines.
 
 4. I load this into GEP as a temporary item (File > Open). Drop a pin on a midway point along the newly visible line, and grab the coordinates for the midway point as in setp 2.  Delete the temporary item loaded in step 4, then make a new KML file for the full-circle line.
 
-5. __The 5-point, 4-segment great circle formula__. Draw line segments connecting these points, in order:
+5. _UPDATED_: Since initial upload of this article, I've realized there is a simpler formula for drawing a great circle than what I had written orignally.  I think my original approach does have some usefulness which I will explore in future articles, but here is the new formula which I think is better for most scenarios:
+
+_The 2-point, 2-antipode cross great circle formula_
+
+Draw line segments connecting these points, in order:
 * The first reference point
-* A midway point anywhere along a line drawn between the first and second points of interest.
 * The second reference point.
-* The antipode of the midway point.  To determine the antipode of a given coordinate:
-  * The first value is the longitude.
-    * If it is negative (i.e., west of the Prime Meridian), add 180.
-    * If it is positive (i.e., east of the Prime Meridian), subtract 180.
-  * The second value is the latitude.
-    * Multiply by -1 to reverse the sign.
-  * For example:
-    * This is the a point on the Nazca plain: `-75.12640974398208,-14.69586512288908,0`.
-    * This is it's antipode: `104.87359025601792,14.69586512288908,0`.
+* The antipode of the first reference point.
+  * To determine the antipode of a given coordinate:
+    * The first value is the longitude.
+      * If it is negative (i.e., west of the Prime Meridian), add 180.
+      * If it is positive (i.e., east of the Prime Meridian), subtract 180.
+    * The second value is the latitude.
+      * Multiply by -1 to reverse the sign.
+    * For example:
+      * This is the a point on the Nazca plain: `-75.12640974398208,-14.69586512288908,0`.
+      * This is it's antipode: `104.87359025601792,14.69586512288908,0`.
+* The antipode of the second reference point.
 * The first reference point, again.
 
-For Great Pyramid of Giza-Angkor Wat great circle, the markup looks like this:
+For the Great Pyramid of Giza-Angkor Wat great circle, the markup looks like this:
 
 ```
 <coordinates>
   31.13421985356293,29.97918784549606,0    <!-- Giza -->
-  67.99588682419022,26.73842563268983,0    <!-- Midway point -->
-  103.8668450435321,13.41240346106511,0    <!-- Angkor -->
-  -112.00411317580978,-26.73842563268983,0 <!-- Midway antipode -->
+  103.8668450435321,13.41240346106511,0    <!-- Angkor Wat -->
+  -148.8657801464371,-29.97918784549606,0  <!-- Giza Antipode -->
+  -76.1331549564679,-13.41240346106511,0   <!-- Angkor Wat Antipode -->
   31.13421985356293,29.97918784549606,0    <!-- Giza -->
 </coordinates>
 ```
 
-Imagine the points as being laid out along a flat circle in the form of a ☮ peace symbol:
-
-<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d2/Peace_sign.svg/640px-Peace_sign.svg.png" alt="Peace Symbol" width="200"/>
-
 Using 4 segments like this will give Google Earth the information it needs to draw a great circle around the Earth, overlaying the two points of interest, and it is more accurate than anything drawn freehand.  The new KML file can be opened into GEP as a new item that sits alongside the separate items previously created for the two points of interest.
+
+__Longitude__
 
 Then there is the question of how to draw two more longitudinal circles, at perpendicular angles to the equator circle, at each reference point, to traingulate an alternate pole.  To do this:
 
