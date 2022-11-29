@@ -22,7 +22,7 @@ I wanted to reproduce this using GEP, the same app Chuck used. I have no prior e
 
 I read the [official documentation ](https://developers.google.com/kml/documentation) and some Stack Exchange [posts](https://gis.stackexchange.com/a/133119) for guidance.  Once I had figured out how to write the markup for a simple line, there was the challenge of making a line between any 2 given points extend in a complete 360 degree circle around the Earth.  It's a difficult task, because GEP will, given any two points, draw the shortest line between them. There is no way to make it draw the negative of that line, going the long way around the Earth to join the two points.
 
-I don't know how Chuck actually did it, but this was my method (see step 5 for the mathematical solution):
+I don't know how Chuck actually did it, but this was my method (see step 4 for the mathematical solution):
 
 __Great Circle__
 
@@ -34,7 +34,7 @@ important here is the numerical longitude/lattitude coordinates for the site.
 For example, this is the XML element with the coordinates for the apex (center)
 of the Great Pyramid of Giza: `<coordinates>104.87359025601792,14.69586512288908,0</coordinates>`.  In the node, the actual coordinate value is `104.87359025601792,14.69586512288908,0` which encodes a longitude, a latitude, and an altitude as comma-separated values. I will make use of this in later steps.
 
-3. Write a new .kml file which will encode a simple version the line to draw. This is a basic template which can take a list of two or more coordinates, which are nodes along a segmented line, like a connect-the-dots puzzle (see example in kml/lines/giza_angkor_template.kml). Draw a line between two points of interest:
+3. Write a new .kml file which will encode a simple version the line to draw. This is a basic template which can take a list of two or more coordinates, which are nodes along a segmented line, like a connect-the-dots puzzle. Draw a line between two reference points by stating both points in the `<coordinates></coordinates>` tag:
 
 ```
 <coordinates>
@@ -42,12 +42,44 @@ of the Great Pyramid of Giza: `<coordinates>104.87359025601792,14.69586512288908
   103.8668450435321,13.41240346106511,0    <!-- Angkor -->
 </coordinates>
 ```
+
 Each CSV coordinate value is separated by whitespace.  I like to use a newline
 which allows for comment text at the ends of the lines.
 
-4. I load this into GEP as a temporary item (File > Open). Drop a pin on a midway point along the newly visible line, and grab the coordinates for the midway point as in setp 2.  Delete the temporary item loaded in step 4, then make a new KML file for the full-circle line.
+Here is the full template example, from [kml/lines/giza_angkor_template](https://github.com/horizonridgestudio/snakes_kml_1/blob/main/kml/lines/giza_angkor_template.kml) in this repo:
 
-5. _UPDATED_: Since initial upload of this article, I've realized there is a simpler formula for drawing a great circle than what I had written orignally.  I think my original approach does have some usefulness which I will explore in future articles, but here is the new formula which I think is better for most scenarios:
+```
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2" xmlns:gx="http://www.google.com/kml/ext/2.2" xmlns:kml="http://www.opengis.net/kml/2.2" xmlns:atom="http://www.w3.org/2005/Atom">
+<Document>
+	<name>Giza-Angkor Template</name>
+	<Style id="yellowLine">
+		<LineStyle>
+			<color>7f00ffff</color>
+			<width>4</width>
+		</LineStyle>
+		<PolyStyle>
+			<color>7f00ff00</color>
+		</PolyStyle>
+	</Style>
+	<Placemark>
+		<styleUrl>yellowLine</styleUrl>
+		<LineString>
+			<extrude>1</extrude>
+			<tessellate>1</tessellate>    
+			<coordinates>
+				31.13421985356293,29.97918784549606,0    <!-- Giza -->
+				103.8668450435321,13.41240346106511,0    <!-- Angkor -->
+			</coordinates>
+		</LineString>
+	</Placemark>
+</Document>
+</kml>
+```
+
+This template can be reused simply by saving to a new filename, and changing `<coordinates></coordinates>` and `<name></name>` tag values.
+
+4. _UPDATED_: Since initial upload of this article, I've realized there is a simpler formula for drawing a great circle than what I had written orignally.  I think my original approach does have some usefulness which I will explore in future articles, but here is the new formula which I think is better for most scenarios:
 
 _The 2-point, 2-antipode cross great circle formula_
 
