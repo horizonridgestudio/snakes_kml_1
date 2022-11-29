@@ -36,7 +36,7 @@ of the Great Pyramid of Giza: `<coordinates>104.87359025601792,14.69586512288908
 
 3. Write a new .kml file which will encode a simple version the line to draw. This is a basic template which can take a list of two or more coordinates, which are nodes along a segmented line, like a connect-the-dots puzzle. Draw a line between two reference points by stating both points in the `<coordinates></coordinates>` tag:
 
-```
+```xml
 <coordinates>
   31.13421985356293,29.97918784549606,0    <!-- Giza -->
   103.8668450435321,13.41240346106511,0    <!-- Angkor -->
@@ -48,31 +48,31 @@ which allows for comment text at the ends of the lines.
 
 Here is the full template example, from [kml/lines/giza_angkor_template](https://github.com/horizonridgestudio/snakes_kml_1/blob/main/kml/lines/giza_angkor_template.kml) in this repo:
 
-```
+```xml
 <?xml version="1.0" encoding="UTF-8"?>
 <kml xmlns="http://www.opengis.net/kml/2.2" xmlns:gx="http://www.google.com/kml/ext/2.2" xmlns:kml="http://www.opengis.net/kml/2.2" xmlns:atom="http://www.w3.org/2005/Atom">
 <Document>
-	<name>Giza-Angkor Template</name>
-	<Style id="yellowLine">
-		<LineStyle>
-			<color>7f00ffff</color>
-			<width>4</width>
-		</LineStyle>
-		<PolyStyle>
-			<color>7f00ff00</color>
-		</PolyStyle>
-	</Style>
-	<Placemark>
-		<styleUrl>yellowLine</styleUrl>
-		<LineString>
-			<extrude>1</extrude>
-			<tessellate>1</tessellate>    
-			<coordinates>
-				31.13421985356293,29.97918784549606,0    <!-- Giza -->
-				103.8668450435321,13.41240346106511,0    <!-- Angkor -->
-			</coordinates>
-		</LineString>
-	</Placemark>
+  <name>Giza-Angkor Template</name>
+  <Style id="yellowLine">
+    <LineStyle>
+      <color>7f00ffff</color>
+      <width>4</width>
+    </LineStyle>
+    <PolyStyle>
+      <color>7f00ff00</color>
+    </PolyStyle>
+  </Style>
+  <Placemark>
+    <styleUrl>yellowLine</styleUrl>
+    <LineString>
+      <extrude>1</extrude>
+      <tessellate>1</tessellate>
+      <coordinates>
+        31.13421985356293,29.97918784549606,0    <!-- Giza -->
+        103.8668450435321,13.41240346106511,0    <!-- Angkor -->
+      </coordinates>
+    </LineString>
+  </Placemark>
 </Document>
 </kml>
 ```
@@ -99,9 +99,9 @@ Draw line segments connecting these points, in order:
 * The antipode of the second reference point.
 * The first reference point, again.
 
-For the Great Pyramid of Giza-Angkor Wat great circle, the markup looks like this:
+For the Great Pyramid of Giza-Angkor Wat great circle, the `<coordinates></coordinates>` tag looks like this:
 
-```
+```xml
 <coordinates>
   31.13421985356293,29.97918784549606,0    <!-- Giza -->
   103.8668450435321,13.41240346106511,0    <!-- Angkor Wat -->
