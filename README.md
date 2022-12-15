@@ -199,12 +199,12 @@ This reinforces my conclusions above that the Nazca site must be considered as d
 Since initial upload of this article, discussions have revealed more related source material covering the Giza-Easter Island great circle.  Jim Allison seems to be the primary source that Gilbertson, Pooyard, and Chuck are drawing from.  I will review each of these works specifically in future articles.  I will also be posting more on KML [my tech blog](https://www.horizonridge.studio/blog).
 
 * Jim Allison, [The Prehistoric Alignment of World Wonders](http://home.hiwaay.net/~jalison/) (2001)
-* Patrice Pooyard, [The Revelation of the Pyramids](https://www.imdb.com/title/tt2124189/) (2010)
+* Patrice Pouillard, [The Revelation of the Pyramids](https://youtu.be/EHs6Gj7Cxzg) (2010)
 * Chuck, cf-apps7865, [The Equator 12,500 Years Ago?](https://youtu.be/DpNI2FtCgtc) (2014)
 * Jean Seimple [L’Équateur Penché " à 30°- L'Explication Scientifique. EQUINOXE 2/4](https://youtu.be/uhKvs_2_2Hk) (2019)
 * Roger Gilbertson, [The Unusual Earth Orbit Circling Above Our Ancient Past, TEDxColoradoSprings](https://www.youtube.com/watch?v=_HytJn6uaRk&start=272) (2020)
 * [nazcasolution.com](https://nazcasolution.com/hypothesis/) (2020)
-* Patrice Pooyard, [BAM: Builders of the Ancient Mysteries](https://www.imdb.com/title/tt14564806/?ref_=nm_knf_t_3) (2010)
+* Patrice Pouillard, [BAM: Builders of the Ancient Mysteries](https://www.imdb.com/title/tt14564806/?ref_=nm_knf_t_3) (2010)
 
 <strong id="data">Data</strong>
 
