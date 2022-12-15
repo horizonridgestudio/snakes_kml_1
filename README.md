@@ -204,7 +204,6 @@ Since initial upload of this article, discussions have revealed more related sou
 * Jean Seimple [L’Équateur Penché " à 30°- L'Explication Scientifique. EQUINOXE 2/4](https://youtu.be/uhKvs_2_2Hk) (2019)
 * Roger Gilbertson, [The Unusual Earth Orbit Circling Above Our Ancient Past, TEDxColoradoSprings](https://www.youtube.com/watch?v=_HytJn6uaRk&start=272) (2020)
 * [nazcasolution.com](https://nazcasolution.com/hypothesis/) (2020)
-* Jean Seimple [L’Équateur Penché " à 30°- L'Explication Scientifique. EQUINOXE 2/4](https://youtu.be/uhKvs_2_2Hk) (2019)
 
 <strong id="data">Data</strong>
 
