@@ -1,7 +1,7 @@
 
 **Reviewing cf-apps7865's Youtube Video, [The Equator 12,500 Years Ago?](https://youtu.be/DpNI2FtCgtc)**
 
-***Summary***
+<strong id="summary">Summary</strong>
 
 Chuck of Youtube channel [__cf-apps7865__](https://www.youtube.com/@cfapps7865) entertains a set of ideas, based on his investigations in Google Earth.  He says:
 
@@ -16,7 +16,7 @@ Chuck has illustrated this well enough for a presentation in a simple Youtube vi
 
 Skip to the next section if you are only interested in alignments, and not KML:
 
-***Methodology***
+<strong id="methodology">Methodology</strong>
 
 I wanted to reproduce this using GEP, the same app Chuck used. I have no prior experience with Geographic Information System (GIS) software, or any formal knowlege of [geodesy](https://oceanservice.noaa.gov/facts/geodesy.html).  Google Earth is an amazing resource that opens these fields up to everyone, and I want to learn to use it in a deeper way.  As a technical challenge, I wanted to be able to draw a circle around the globe as if it were an alternate equator.  I had previously failed to do this by simply clicking around on Google Maps or Google Earth on the web.  It's not a feature that's built into those apps.  So a big part of the appeal of Chuck's video is from wondering, "Hey, how did he actually _do that_?"  Using GEP, it turns out it's not an easy feat to accomplish just by clicking around, either, as far as I can tell.  I had to dig into Keyhole Markup Language (KML), a specialized XML, which can be loaded into GEP for drawing lines and other more complicated shapes.
 
@@ -127,7 +127,7 @@ Then there is the question of how to draw two more longitudinal circles, at perp
 
 5. Load the perpendicular KML file into GEP alongside the first one and verify by sight.
 
-***Findings***
+<strong id="findings">Findings</strong>
 
 Sadly, I don't think Chuck's claims bear close scrutiny.  As you zoom out, a site which does not lie along a line will apparently approach the line.  The degree of precision is determined by the to amount to which you zoom out.  Chuck's views are usually very zoomed out, on the order of 10,000 miles, viewed from a vantage point showing the whole globe in space.  So there's a lot of glossing over details in order to pursue an appealing, intuitive idea.  I found that the alignments only work given a 110-mile margin of error.
 
@@ -153,7 +153,7 @@ This illustrates the utility of great circles, regardless of whether there is a 
 
 In conclusion, I was not able to identify the specific Nazca line which Chuck extended to draw his alternate equator, creating a best-fit approximation for alignments over Giza, Angkor, Ollantaytambo, and Easter Island, without accepting a 110-mile margin of error.  Other aspects of the Nazca-Giza-Malaspina triangle hypothesis are intriguing and might bear fruit with further study.
 
-****Update****
+<strong id="update">Update</strong>
 
 After discussion with @MartinOfTheHenges, we've settled on the solution of a Giza-Easter Island great circle to expalain the alignments Chuck was using.  I used the site of Te Pito Kura, the "navel stone" as my reference point on the island.  Interestingly, Easter Island is almost antipodal to Giza;  It is impossible to see both simultaneously in a single view of the globe:
 
@@ -194,7 +194,7 @@ The relationship to the Nazca Plain is interesting.  This line passes directly o
 
 This reinforces my conclusions above that the Nazca site must be considered as dual-purpose.  The plain itself is a significant geodetic site on a global scale, but the lines marked on the plain are more likely of local significance only.
 
-***Links***
+<strong id="links">Links</strong>
 
 Since initial upload of this article, discussions have revealed more related source material covering the Giza-Easter Island great circle.  Jim Allison seems to be the primary source that Gilbertson, Pooyard, and Chuck are drawing from.  I will review each of these works specifically in future articles.  I will also be posting more on KML [my tech blog](https://www.horizonridge.studio/blog).
 
@@ -206,7 +206,7 @@ Since initial upload of this article, discussions have revealed more related sou
 * [nazcasolution.com](https://nazcasolution.com/hypothesis/) (2020)
 * Jean Seimple [L’Équateur Penché " à 30°- L'Explication Scientifique. EQUINOXE 2/4](https://youtu.be/uhKvs_2_2Hk) (2019)
 
-***Data***
+<strong id="data">Data</strong>
 
 To view the data for yourself, you will need to have installed the Google Earth Pro [desktop app](https://www.google.com/earth/about/versions/?gl=US&hl=en#download-pro).  To download this repo, scroll to the top of this page, and click the green __Code__ button, then click the __Download ZIP__ link to save a .zip file.  Unzip the file.  Under the folder __kml__, there are two subfolders, __sites__, and __lines__.  Using Google Earth Pro, run File > Open, navigate to either of these folders, and select all contents.  The __sites__ .kml files are pushpins for all relevant ancient cultural sites mentioned in this article.  The __lines__ .kml files are the alignments described in this article.  
 
